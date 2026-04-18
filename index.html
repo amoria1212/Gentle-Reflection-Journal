@@ -358,31 +358,31 @@
             </p>
             
             <div class="space-y-3">
-                <button onclick="shareViaEmail()" class="share-option" style="background-color: #EFF6FF; color: #1D4ED8;">
+                <button onclick="shareViaEmail()" class="share-option">
                     <span class="icon">📧</span>
                     <div class="content">
                         <div class="title">Email as a Draft</div>
                         <div class="description">Opens your email client with responses pre-populated.</div>
                     </div>
                 </button>
-                
-                <button onclick="copyToClipboard()" class="share-option" style="background-color: #F0FDF4; color: #15803D;">
+
+                <button onclick="copyToClipboard()" class="share-option">
                     <span class="icon">📋</span>
                     <div class="content">
                         <div class="title">Copy to Clipboard</div>
                         <div class="description">Copy text to paste anywhere you choose.</div>
                     </div>
                 </button>
-                
-                <button onclick="shareViaWebAPI()" class="share-option" id="webShareButton" style="background-color: #FAF5FF; color: #7C3AED; display: none;">
+
+                <button onclick="shareViaWebAPI()" class="share-option" id="webShareButton" style="display: none;">
                     <span class="icon">🔗</span>
                     <div class="content">
                         <div class="title">Use My Device Sharing</div>
                         <div class="description">Share using your phone or computer's native share options.</div>
                     </div>
                 </button>
-                
-                <button onclick="downloadFile()" class="share-option" style="background-color: #FFF7ED; color: #C2410C;">
+
+                <button onclick="downloadFile()" class="share-option">
                     <span class="icon">💾</span>
                     <div class="content">
                         <div class="title">Download as Text File</div>
@@ -409,16 +409,16 @@
 
         <!-- Action Buttons -->
         <div class="no-print flex flex-wrap gap-3 mb-6 justify-center sm:justify-end">
-            <button id="shareBtn" onclick="openShareModal()" class="btn bg-purple-100 hover:bg-purple-200 text-purple-800 px-4 py-2 rounded-lg">
+            <button id="shareBtn" onclick="openShareModal()" class="btn btn-primary">
                 🔗 Share Journal
             </button>
-            <button id="exportBtn" onclick="exportData()" class="btn bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
+            <button id="exportBtn" onclick="exportData()" class="btn btn-ghost">
                 📥 Export Responses
             </button>
-            <button id="printBtn" onclick="window.print()" class="btn bg-blue-50 hover:bg-blue-100 text-blue-600 px-4 py-2 rounded-lg">
+            <button id="printBtn" onclick="window.print()" class="btn btn-ghost">
                 🖨️ Print
             </button>
-            <button id="clearBtn" onclick="clearData()" class="btn bg-red-50 hover:bg-red-100 text-red-600 px-4 py-2 rounded-lg">
+            <button id="clearBtn" onclick="clearData()" class="btn btn-danger">
                 🗑️ Clear All
             </button>
         </div>
@@ -541,6 +541,25 @@
         <p class="text-gray-600 mt-8 italic text-center text-lg">
             This journal is your personal tool for compassionate self-discovery. Use it at your own pace and bring your reflections to our next session.
         </p>
+
+        <!-- Companion Resources -->
+        <section class="mb-8">
+            <h2 class="section-header text-2xl sm:text-3xl font-semibold mt-12">Companion Resources</h2>
+            <p class="mb-4 leading-relaxed">These are some of the voices that have been companions to this work. None of them is homework. Take what serves. Leave what doesn't.</p>
+
+            <h3 class="text-xl font-semibold mt-6 mb-2">Books</h3>
+            <ul style="padding-left: 1.25rem; line-height: 1.8;">
+                <li><span style="font-style: italic;">DBT Skills Training Handouts and Worksheets</span> by Marsha Linehan — the foundational DBT workbook, adapted for self-guided use. Good if you want to work one skill at a time at your own pace.</li>
+                <li><span style="font-style: italic;">The Dialectical Behavior Therapy Skills Workbook</span> by Matthew McKay, Jeffrey Wood, and Jeffrey Brantley — a softer entry point than Linehan. Plain language, short chapters, easy to dip into and set down.</li>
+                <li><span style="font-style: italic;">Self-Compassion: The Proven Power of Being Kind to Yourself</span> by Kristin Neff — pairs naturally with the radical acceptance work. Helpful when the inner critic gets loud around the skills themselves.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mt-6 mb-2">Online practices</h3>
+            <ul style="padding-left: 1.25rem; line-height: 1.8;">
+                <li><a href="https://www.therapistaid.com">Therapist Aid</a> — free DBT and CBT worksheets when a particular skill wants more structure than this journal offers.</li>
+                <li><a href="https://self-compassion.org">Self-Compassion</a> — Dr. Neff's site, with free guided practices including the Self-Compassion Break.</li>
+            </ul>
+        </section>
 
     </div>
 
